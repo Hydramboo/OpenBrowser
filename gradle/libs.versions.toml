@@ -1,0 +1,65 @@
+[versions]
+compileSdk = "36"
+minSdk = "20"
+multidex = "2.0.1"
+targetSdk = "36"
+javaVersion = "17"
+
+agp = "8.11.0"
+
+okhttp3Compat = "5.0.0-p2"
+material = "1.11.0"
+materialCompat = "1.12.0-alpha01"
+materialPreferences = "1.0.1"
+appcompat = "1.6.1"
+preference = "1.2.1"
+constraintlayout = "2.1.4"
+junit = "4.13.2"
+androidxTestRunner = "1.5.2"
+espressoCore = "3.5.1"
+zxingCore = "3.3.3"
+zxingEmbedded = "3.6.0"
+kotlin = "2.1.21"
+ksp = "2.1.21-2.0.2"
+coreKtx = "1.12.0"
+
+hikageCore = "1.0.5-alpha01"
+hikageRecyclerView = "1.0.1-alpha01"
+hikageExtension = "1.0.2"
+hikageExtensionBetterAndroid = "1.0.2"
+hikageCompiler = "1.0.1"
+hikageWidgetAndroidX = "1.0.1"
+hikageWidgetMaterial = "1.0.1"
+
+orgEclipseJgit = "7.2.0.202503040940-r"
+
+[libraries]
+androidx-multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+okhttp-compat = { group = "com.huanli233.okhttp3-compat", name = "okhttp", version.ref = "okhttp3Compat" }
+material-compat = { group = "com.huanli233.materialcompat", name = "material", version.ref = "materialCompat" }
+materialpreferences = { group = "com.huanli233.materialpreferences", name = "preferences", version.ref = "materialPreferences" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+zxing-core = { group = "com.google.zxing", name = "core", version.ref = "zxingCore" }
+zxing-android-embedded = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "zxingEmbedded" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+hikage-core = { group = "com.huanli233.hikage.compat", name = "hikage-core", version.ref = "hikageCore" }
+hikage-recyclerview = { group = "com.huanli233.hikage.compat", name = "hikage-recyclerview", version.ref = "hikageRecyclerView" }
+hikage-extension = { group = "com.huanli233.hikage.compat", name = "hikage-extension", version.ref = "hikageExtension" }
+hikage-extension-betterandroid = { group = "com.huanli233.hikage.compat", name = "hikage-extension-betterandroid", version.ref = "hikageExtensionBetterAndroid" }
+hikage-compiler = { group = "com.huanli233.hikage.compat", name = "hikage-compiler", version.ref = "hikageCompiler" }
+hikage-widget-androidx = { group = "com.huanli233.hikage.compat", name = "hikage-widget-androidx", version.ref = "hikageWidgetAndroidX" }
+hikage-widget-material = { group = "com.huanli233.hikage.compat", name = "hikage-widget-material", version.ref = "hikageWidgetMaterial" }
+
+org-eclipse-jgit = { module = "org.eclipse.jgit:org.eclipse.jgit", version.ref = "orgEclipseJgit" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

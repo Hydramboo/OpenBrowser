@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#0052D9</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="pureBlack">#000000</color>
+    <color name="pureWhite">#FFFFFF</color>
+    <color name="tBlue">#60E7BE</color>
+    <!-- 悬浮球背景颜色 -->
+    <color name="fab_background_color">#FF5722</color>
+    
+    <!-- 主题颜色 -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark_color">#1976D2</color>
+    <color name="accent_color">#FF5722</color>
+    
+    <!-- 工具栏相关颜色 -->
+    <color name="toolbar_background">#FFFFFF</color>
+    <color name="toolbar_border">#E0E0E0</color>
+    
+    <!-- 透明度颜色 -->
+    <color name="overlay_background">#80000000</color>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">氢竹浏览器</string>
+    <string name="ok">好</string>
+    <string name="cancel">取消</string>
+    <string name="browser">浏览器</string>
+    <string name="browser_tabs">多标签页（实验性）</string>
+    <string name="browser_widget">同层渲染化视频（实验性）</string>
+    <string name="setting">设置</string>
+    <string name="version_name_format">v%1$s</string>
+    <string name="server_version">服务器版本: %1$d</string>
+    <string name="check_update">检查更新</string>
+</resources>

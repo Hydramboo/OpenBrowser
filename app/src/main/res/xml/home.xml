@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="功能">
+        <Preference
+            android:title="@string/browser">
+            <intent
+                android:targetPackage="rj.browser"
+                android:targetClass="rj.browser.ui.browser.WebViewActivity" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/setting">
+        <Preference
+            android:title="选项">
+            <intent
+                android:targetPackage="rj.browser"
+                android:targetClass="rj.browser.ui.setting.SettingsActivity" />
+        </Preference>
+        <Preference
+            android:title="关于">
+            <intent
+                android:targetPackage="rj.browser"
+                android:targetClass="rj.browser.ui.about.AboutActivity" />
+        </Preference>
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

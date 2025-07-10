@@ -1,0 +1,19 @@
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.huanli233.materialpreferences.MaterialSwitchPreference
+        android:key="ccache"
+        android:title="自动清除缓存"/>
+
+    <androidx.preference.ListPreference
+        android:key="dark_mode"
+        android:title="深色模式"
+        android:summary="选择深色模式设置"
+        android:entries="@array/dark_mode_options"
+        android:entryValues="@array/dark_mode_values"
+        android:defaultValue="follow_system" />
+
+
+
+</androidx.preference.PreferenceScreen>
