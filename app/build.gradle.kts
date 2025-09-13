@@ -66,11 +66,11 @@ fun getGitHash(): String {
 }
 
 android {
-    namespace = "rj.browser.max"
+    namespace = "rj.browser"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "rj.browser"
+        applicationId = "rj.browser.max"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = getGitCommitCount()
