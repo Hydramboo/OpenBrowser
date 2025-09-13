@@ -17,7 +17,6 @@ plugins {
     alias(libs.plugins.ksp)
 }
 
-// 获取当前的 buildType 并将其动态添加到版本号
 fun getBuildType(): String {
     return kotlin.runCatching {
         project.gradle.startParameter.taskNames.find { it.contains("assemble", ignoreCase = true) }
@@ -67,7 +66,7 @@ fun getGitHash(): String {
 }
 
 android {
-    namespace = "rj.browser"
+    namespace = "rj.browser.max"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -75,7 +74,7 @@ android {
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = getGitCommitCount()
-        versionName = "2.4.0-${getGitBranchName()}:${getBuildType()}+${getGitHash()}"
+        versionName = "2.5.0-${getGitBranchName()}:${getBuildType()}+${getGitHash()}"
         multiDexEnabled = true
  
         ndk {
@@ -116,7 +115,7 @@ android {
         }
         create("clone") {
             initWith(getByName("release")) // 从 'debug' 构建类型继承所有配置
-            applicationIdSuffix = ".pro"
+            applicationIdSuffix = ".b"
         }
     }
 
